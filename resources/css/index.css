@@ -3,19 +3,20 @@
 }
 
 body{
-    margin-top: 50px;
+    margin: 50px 0px 0px;
     display: flex;
     flex-direction: column;
-    
+
 }
 
 footer{
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     background-color: lightblue;
     text-align: center;
     width: 100%;
+    margin: 0;
 }
 
 .footerImgs{
@@ -58,29 +59,6 @@ a{
     text-decoration: none;
 }
 
-.buttonsPage{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    max-width: 800px; 
-    margin: 0 auto; 
-}
-
-.buttonsPage a {
-    aspect-ratio: 1 / 1; 
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    background-color: #f0f0f0; 
-    color: black; 
-    text-decoration: none; 
-    border: 2px solid #ccc; 
-    border-radius: 8px; 
-    font-weight: bold;
-    cursor: pointer;
-    padding: 20px;
-}
-
-.buttonsPage a:hover {
-    background-color: #ddd; 
+.MainBody{
+    margin: 10px;
 }
