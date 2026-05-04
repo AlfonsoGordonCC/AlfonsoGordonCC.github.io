@@ -32,3 +32,10 @@
 .linkedin{
     font-weight: bold;
 }
+
+body{
+    margin: 0;
+}
+.MainBody{
+    margin: 10px 10px 50px;
+}
