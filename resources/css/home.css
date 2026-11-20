@@ -1,6 +1,6 @@
 .homeFooter{
-    position: fixed;
-}
+    margin-top: auto;
+} 
 
 .buttonsPage{
     display: grid;
@@ -35,6 +35,9 @@
 
 body{
     margin: 0;
+    min-height: 100vh;     /* fallback for older browsers */
+    min-height: 100dvh;    /* accounts for mobile browser toolbars */
+
 }
 .MainBody{
     margin: 10px 10px 50px;
