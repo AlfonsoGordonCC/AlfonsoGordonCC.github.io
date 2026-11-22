@@ -5,6 +5,13 @@
     flex-direction: column;
 }
 
+.downloadCV {
+    text-align: center;
+    margin: 20px 0;
+    padding: 20px 40px;
+    font-size: 30px;
+    border-radius: 10px;
+}
 
 .Experience h3 {
     text-decoration: none;
