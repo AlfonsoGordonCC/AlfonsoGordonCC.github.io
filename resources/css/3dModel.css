@@ -5,9 +5,10 @@ canvas {
 }
 
 .item *[data-diagram] {
+    --model-size: clamp(12em, 28vw, 20em);  /* min, preferred, max */
     display: inline-block;
-    width: 7em;
-    height: 7em;
+    width: var(--model-size);
+    height: var(--model-size);
 }
 
 .item .left {
@@ -43,6 +44,8 @@ canvas {
 
 .itLeft p{
     text-align: left;
+    font-size: large;
+    margin: 16px;
 }
 
 .itRight h2{
@@ -52,6 +55,8 @@ canvas {
 
 .itRight p{
     text-align: right;
+    font-size: large;
+    margin: 16px;
 }
 
 .itemTopL{
