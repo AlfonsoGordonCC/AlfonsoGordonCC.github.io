@@ -1,5 +1,5 @@
 .homeFooter{
-    margin-top: auto;
+    margin-top: 100px;
 } 
 
 .buttonsPage{
@@ -40,5 +40,41 @@ body{
 
 }
 .MainBody{
-    margin: 10px 10px 50px;
+    display: flex;
+    align-items: center;           /* vertically centers the photo against the text */
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    max-width: 800px;              /* same as .buttonsPage, so the edges line up */
+    box-sizing: border-box;
+    margin: 10px auto 50px;
+    padding: 0 10px;
+    flex-direction: row;
+}
+
+.Intro{
+    flex: 1;
+}
+
+.profilePic {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;        /* crops instead of stretching */
+    border-radius: 50%;       /* circle; use 12px for rounded corners instead */
+    border: 3px solid lightblue;   /* matches your nav and footer */
+    flex-shrink: 0;           /* stops the photo from squishing */
+    
+    
+}
+
+/* on phones, put the photo above the text */
+@media (max-width: 700px){
+    .MainBody{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .profilePic{
+        width: 160px;
+        height: 160px;
+    }
 }
